@@ -11,6 +11,25 @@ It includes:
 - Client-specific extension packs for Cursor and Gemini
 - Test/status tracking
 - Documentation of client differences
+## Project Structure
+
+```text
+Skillforge/
+├── backend/
+│   └── Node.js + Express backend
+├── extensions/
+│   ├── cursor/
+│   │   └── skill-pack.json
+│   └── gemini/
+│       └── skill-pack.json
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── styles.css
+│   ├── package.json
+│   └── vite.config.js
+└── README.md
 
 ## Run
 
