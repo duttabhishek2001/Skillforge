@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f4f6f8;
+}
+
+body {
+  margin: 0;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 42px 7%;
+  background: #101828;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  opacity: .7;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 58px);
+}
+
+.subtitle {
+  margin: 12px 0 0;
+  max-width: 720px;
+  color: #cbd5e1;
+  font-size: 17px;
+}
+
+.heroBadge {
+  border: 1px solid #475467;
+  border-radius: 999px;
+  padding: 9px 14px;
+  white-space: nowrap;
+}
+
+.container {
+  width: min(1180px, 92%);
+  margin: 28px auto 70px;
+}
+
+.notice {
+  padding: 13px 16px;
+  border-radius: 10px;
+  background: #e7f6ec;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat, .panel {
+  background: white;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+}
+
+.stat {
+  padding: 20px;
+}
+
+.stat span {
+  color: #667085;
+  font-size: 13px;
+}
+
+.stat strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 30px;
+}
+
+.panel {
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.panel h2 {
+  margin: 0;
+}
+
+.panelHeader p {
+  margin: 5px 0 0;
+  color: #667085;
+}
+
+select, input, textarea {
+  width: 100%;
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+  padding: 11px 12px;
+  background: white;
+}
+
+.panelHeader select {
+  width: 190px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.client {
+  color: #6941c6;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card h3 {
+  margin: 5px 0 0;
+}
+
+.card p {
+  color: #475467;
+  line-height: 1.55;
+}
+
+.status {
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.tested {
+  background: #dcfae6;
+  color: #067647;
+}
+
+.status.untested {
+  background: #f2f4f7;
+  color: #475467;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chips span {
+  background: #f2f4f7;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.mcp {
+  margin-top: 15px;
+  padding-top: 13px;
+  border-top: 1px solid #eaecf0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.mcp span {
+  color: #667085;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.actions button, .primary {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 13px;
+  background: #101828;
+  color: white;
+}
+
+.actions .danger {
+  background: #fff1f0;
+  color: #b42318;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.form label {
+  display: grid;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.primary {
+  width: fit-content;
+  padding: 11px 17px;
+}
+
+.differenceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.differenceGrid > div {
+  background: #f8f9fc;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.differenceGrid h3 {
+  margin-top: 0;
+}
+
+.differenceGrid p, .differenceGrid li {
+  color: #667085;
+}
+
+.empty {
+  color: #667085;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding: 30px 5%;
+    align-items: flex-start;
+  }
+
+  .stats, .cards, .differenceGrid, .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .panelHeader {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .panelHeader select {
+    width: 100%;
+  }
+}

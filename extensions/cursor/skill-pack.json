@@ -1,0 +1,16 @@
+{
+  "client": "cursor",
+  "name": "Repository Explorer",
+  "version": "1.0.0",
+  "description": "Explore a repository and return a concise implementation map.",
+  "instructions": [
+    "Start by identifying the project structure.",
+    "Search for files relevant to the requested change.",
+    "Read only the files needed to answer or implement the task.",
+    "Return paths and reasons so the user can verify the result."
+  ],
+  "mcp": {
+    "server": "filesystem",
+    "tools": ["list_files", "read_file", "search_files"]
+  }
+}
